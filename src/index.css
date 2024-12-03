@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "inter", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.four-seasons {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+}
+
+.tracking-extra-wide {
+  @media (min-width: 1024px) {
+    letter-spacing: 2.2em;
+  }
+  @media (max-width: 1024px) {
+    letter-spacing: 1.2em;
+  }
+}
