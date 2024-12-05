@@ -11,6 +11,19 @@
   color: white;
 }
 
+.scale-hover {
+  @apply transition-transform duration-500 ease-in-out hover:scale-105 cursor-default;
+}
+
+.scale-hover-span {
+  @apply transition-transform duration-[600ms] ease-out scale-100 cursor-default;
+}
+
+.scale-hover-span:hover {
+  @apply transition-transform duration-[200ms] scale-150;
+  transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
+}
+
 .four-seasons {
   font-family: "Playfair Display", serif;
   font-weight: 300;
@@ -24,4 +37,21 @@
   @media (max-width: 1024px) {
     letter-spacing: 1.2em;
   }
+
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }

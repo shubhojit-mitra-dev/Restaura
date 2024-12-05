@@ -27,54 +27,53 @@ export const LINKS = [
 export const DISHES = [
   {
     image: dish1,
-    title: "Spaghetti Carbonara",
-    description: "Creamy pasta with bacon and cheese",
+    title: "Rice Noodle Curry",
+    description: "Spicy coconut curry with rice noodles and vegetables",
   },
   {
     image: dish2,
-    title: "Chicken Tikka Masala",
-    description: "Indian curry with tender chicken in spicy sauce",
+    title: "Ichiraku Ramen",
+    description: "Savory broth with ramen noodles, pork, and green onions",
   },
   {
     image: dish3,
-    title: "Caprese Salad",
-    description: "Fresh tomatoes, mozzarella, and basil with balsamic glaze",
+    title: "Mexican Chickpea Salad",
+    description: "Chickpeas, corn, and avocado with a tangy lime dressing",
   },
   {
     image: dish4,
-    title: "Sushi Roll",
-    description: "Assorted seafood and vegetables wrapped in seaweed and rice",
+    title: "Albanian Devilled Eggs",
+    description: "Hard-boiled eggs with a spicy red pepper filling",
   },
   {
     image: dish5,
-    title: "Chocolate Lava Cake",
-    description: "Decadent chocolate cake with a gooey center",
+    title: "Crêpes aux bleuets",
+    description: "Fluffy pancakes with fresh blueberries and maple syrup",
   },
   {
     image: dish6,
-    title: "Greek Salad",
-    description: "Crisp lettuce, olives, feta cheese, and tangy dressing",
+    title: "Quinoa Salad",
+    description: "Quinoa, cucumber, and feta cheese with a lemon vinaigrette",
   },
   {
     image: dish7,
-    title: "Pad Thai",
-    description: "Stir-fried rice noodles with shrimp, tofu, and peanuts",
+    title: "Saffron-Kissed Chicken",
+    description: "Chicken marinated in saffron and yogurt, served as curry",
   },
   {
     image: dish8,
-    title: "Peking Duck",
-    description: "Crispy duck with pancakes, cucumber, and hoisin sauce",
+    title: "Salmon Curry",
+    description: "Salmon fillets in a creamy coconut curry sauce",
   },
   {
     image: dish9,
-    title: "Beef Wellington",
-    description: "Tender beef filet wrapped in pastry with mushrooms and herbs",
+    title: "Thai Coconut Beef Ramen",
+    description: "Beef and vegetables in a spicy coconut broth with ramen noodles",
   },
   {
     image: dish10,
-    title: "Tiramisu",
-    description:
-      "Italian dessert with layers of coffee-soaked biscuits and mascarpone",
+    title: "Schezwan Chinese Bowl",
+    description: "Spicy Schezwan noodles with vegetables, egg and tofu",
   },
 ];
 

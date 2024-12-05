@@ -6,10 +6,12 @@ import logo from '../assets/logo.png';
 import fourSeasons from '../assets/four-seasons.png';
 import fourSeasonsLogo from '/favicon.svg';
 
+import LoadingScreen from './LoadingScreen';
+
 import { useEffect, useRef, useState } from 'react'
 
 const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
     const handleResize = () => {
@@ -27,6 +29,17 @@ const HeroSection = () => {
   const isMobile = useIsMobile();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const imgRef = useRef(null);
+
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.addEventListener('loadeddata', () => {
+        setIsVideoLoaded(true);
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const updateDimensions = () => {
@@ -49,9 +62,11 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className='relative flex justify-center items-center h-screen'>
+    <>
+    {!isVideoLoaded && <LoadingScreen />}
+    <section className='relative flex justify-center items-center h-screen' id='hero'>
         <div className='absolute inset-0 h-full w-full -z-20 overflow-hidden'>
-          <video src={video} className='h-full w-full object-cover' autoPlay loop muted playsInline poster={hero} ></video>
+          <video ref={videoRef} src={video} className='h-full w-full object-cover' autoPlay loop muted playsInline poster={hero} ></video>
         </div>
         <div className='absolute inset-0 -z-10 bg-gradient-to-b from-transparent from-50% to-black'></div>
         <div className='absolute top-8 lg:left-8 w-full sm:w-auto z-30 flex justify-center sm:block'>
@@ -62,7 +77,7 @@ const HeroSection = () => {
             />
         </div>
         <div className='relative w-fit z-20 h-screen flex flex-col justify-end items-center pb-16'>
-          <div className='w-fit flex flex-col items-center relative'>
+          <div className='w-fit flex flex-col items-center relative scale-hover'>
           <img 
             ref={imgRef}
             src={logo} 
@@ -82,9 +97,16 @@ const HeroSection = () => {
             </div>
           </div>
           <div className='w-full h-1 bg-gradient-radial from-white to-transparent my-4'></div>
-          <p className='p-2 text-lg tracking-extra-wide sm:pl-12 pl-8'>Dehradun</p>
+          <div className='p-2 text-xl flex space-x-5 sm:space-x-8 md:space-x-10 sm:pl-12 pl-8'>
+          {[..."Dehradun"].map((letter, index) => (
+              <span key={index} className='scale-hover-span'>
+                {letter}
+              </span>
+            ))}
+          </div>
         </div>
     </section>
+</>
 )
 }
 
