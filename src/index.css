@@ -20,7 +20,7 @@
 }
 
 .scale-hover-span:hover {
-  @apply transition-transform duration-[200ms] scale-150;
+  @apply transition-transform duration-[100ms] scale-150;
   transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
 }
 

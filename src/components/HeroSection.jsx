@@ -1,7 +1,7 @@
 import React from 'react'
 
 import video from '../assets/hero.mp4';
-import hero from '../assets/hero.jpeg';
+import hero from '../assets/hero.png';
 import logo from '../assets/logo.png';
 import fourSeasons from '../assets/four-seasons.png';
 import fourSeasonsLogo from '/favicon.svg';
@@ -73,7 +73,7 @@ const HeroSection = () => {
             <img 
                 src={isMobile ? fourSeasons : fourSeasonsLogo} 
                 alt="Four Seasons"
-                className='lg:w-24 lg:h-24 w-64 mt-24 lg:mt-0 xl:ml-2 object-contain'
+                className='lg:w-24 lg:h-24 w-64 mt-24 lg:mt-0 xl:ml-2 object-contain transition-transform duration-200 ease-in-out hover:scale-110'
             />
         </div>
         <div className='relative w-fit z-20 h-screen flex flex-col justify-end items-center pb-16'>
@@ -82,7 +82,7 @@ const HeroSection = () => {
             ref={imgRef}
             src={logo} 
             alt="Restaura" 
-            className='sm:w-4/6 w-full px-8 pb-2'
+            className='sm:w-3/5 w-full px-8 pb-2'
             onLoad={() => {
               if (imgRef.current) {
                 setDimensions({
@@ -97,9 +97,9 @@ const HeroSection = () => {
             </div>
           </div>
           <div className='w-full h-1 bg-gradient-radial from-white to-transparent my-4'></div>
-          <div className='p-2 text-xl flex space-x-5 sm:space-x-8 md:space-x-10 sm:pl-12 pl-8'>
+          <div className='p-2 text-xl flex sm:pl-12 pl-8'>
           {[..."Dehradun"].map((letter, index) => (
-              <span key={index} className='scale-hover-span'>
+              <span key={index} className='w-10 h-10 scale-hover-span'>
                 {letter}
               </span>
             ))}

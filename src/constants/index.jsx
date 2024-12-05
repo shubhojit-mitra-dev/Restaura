@@ -29,51 +29,61 @@ export const DISHES = [
     image: dish1,
     title: "Rice Noodle Curry",
     description: "Spicy coconut curry with rice noodles and vegetables",
+    price: "$15.99",
   },
   {
     image: dish2,
     title: "Ichiraku Ramen",
     description: "Savory broth with ramen noodles, pork, and green onions",
+    price: "$12.99",
   },
   {
     image: dish3,
     title: "Mexican Chickpea Salad",
     description: "Chickpeas, corn, and avocado with a tangy lime dressing",
+    price: "$9.99",
   },
   {
     image: dish4,
     title: "Albanian Devilled Eggs",
     description: "Hard-boiled eggs with a spicy red pepper filling",
+    price: "$6.99",
   },
   {
     image: dish5,
     title: "Crêpes aux bleuets",
     description: "Fluffy pancakes with fresh blueberries and maple syrup",
+    price: "$10.99",
   },
   {
     image: dish6,
     title: "Quinoa Salad",
     description: "Quinoa, cucumber, and feta cheese with a lemon vinaigrette",
+    price: "$8.99",
   },
   {
     image: dish7,
     title: "Saffron-Kissed Chicken",
     description: "Chicken marinated in saffron and yogurt, served as curry",
+    price: "$14.99",
   },
   {
     image: dish8,
     title: "Salmon Curry",
     description: "Salmon fillets in a creamy coconut curry sauce",
+    price: "$18.99",
   },
   {
     image: dish9,
     title: "Thai Coconut Beef Ramen",
     description: "Beef and vegetables in a spicy coconut broth with ramen noodles",
+    price: "$16.99",
   },
   {
     image: dish10,
     title: "Schezwan Chinese Bowl",
     description: "Spicy Schezwan noodles with vegetables, egg and tofu",
+    price: "$15.99",
   },
 ];
 

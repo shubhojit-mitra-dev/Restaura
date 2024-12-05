@@ -4,12 +4,34 @@ import DishCard from "./DishCard";
 
 const Dishes = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const mobileVisibleCount = 4;
-  const tabletVisibleCount = 6;
+  const mobileVisibleCount = 3;
+  const tabletVisibleCount = 2;
+  const [tooltip, setTooltip] = useState({
+    visible: false,
+    content: '',
+    x: 0,
+    y: 0,
+  });
+
+  const handleMouseEnter = (description) => {
+    setTooltip((prev) => ({ ...prev, visible: true, content: description }));
+  };
+
+  const handleMouseMove = (e) => {
+    setTooltip((prev) => ({
+      ...prev,
+      x: e.clientX + 20,
+      y: e.clientY + 20,
+    }));
+  };
+
+  const handleMouseLeave = () => {
+    setTooltip((prev) => ({ ...prev, visible: false, content: '' }));
+  };
 
   return (
-    <section className="container mx-auto py-16" id="dishes">
-      <h2 className="mb-8 text-center text-3xl sm:text-5xl font-bold">
+    <section className="container mx-auto my-16 py-8" id="dishes">
+      <h2 className="mb-12 text-center text-3xl sm:text-5xl font-bold">
         Our Dishes
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mx-8 relative">
