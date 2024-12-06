@@ -8,7 +8,7 @@ const Contact = () => {
         {CONTACT.map((detail) => (
           <p
             key={detail.key}
-            className="my-10 md:text-2xl md:my-20 border-b-2 border-dotted border-neutral-700 pb-12 text-center text-base lg:text-3xl"
+            className="my-10 md:text-2xl md:my-20 border-b-2 border-dotted border-neutral-700 pb-12 text-center text-sm lg:text-3xl"
           >
             {detail.value}
           </p>
