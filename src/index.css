@@ -39,8 +39,10 @@
   }
 
 }
+
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 2px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-track {

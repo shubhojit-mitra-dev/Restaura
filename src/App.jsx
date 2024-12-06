@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Dishes from './components/Dishes';
 import About from './components/About';
 import Mission from './components/Mission';
+import Review from './components/Review';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Dishes />
         <About />
         <Mission />
+        <Review />
       </main>
     </>
   )
