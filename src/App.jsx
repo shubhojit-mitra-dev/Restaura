@@ -4,6 +4,7 @@ import Dishes from './components/Dishes';
 import About from './components/About';
 import Mission from './components/Mission';
 import Review from './components/Review';
+import Contact from './components/Contact';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <About />
         <Mission />
         <Review />
+        <Contact />
       </main>
     </>
   )
