@@ -15,6 +15,9 @@ const Footer = () => {
           </a>
         ))}
       </div>
+      <p className="mt-8 text-center tracking-tighter text-neutral-500">
+        &copy; Built by Shubhojit Mitra
+      </p>
     </div>
   );
 };
