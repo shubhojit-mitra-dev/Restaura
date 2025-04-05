@@ -8,8 +8,6 @@ Welcome to **Restaura**, the premium landing page for a ⭐️⭐️⭐️⭐️
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - Elegant and responsive design
@@ -54,12 +52,6 @@ Check out the live demo [here](https://four-seasons-restaura.vercel.app).
     ```
 
 2. Open your browser and go to `http://localhost:3000` to see the landing page in action.
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
